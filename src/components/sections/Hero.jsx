@@ -12,6 +12,7 @@ import {
   FaTimes,
   FaChevronDown,
   FaChevronUp,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 import {
   SiLeetcode,
@@ -63,12 +64,12 @@ function Hero() {
           {/* Mobile Profile Avatar (In Middle on Mobile) */}
           <div className="lg:hidden my-6 flex justify-center">
             <div className="relative group">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 blur-2xl opacity-50 animate-pulse-glow"></div>
-              <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-72 sm:h-72 rounded-full p-1 bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 shadow-[0_0_40px_rgba(34,211,238,0.4)]">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500/30 via-blue-600/30 to-indigo-600/30 blur-xl opacity-40"></div>
+              <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-72 sm:h-72 rounded-full p-[3px] bg-gradient-to-r from-cyan-500/80 via-blue-600/80 to-indigo-600/80 shadow-[0_0_25px_rgba(34,211,238,0.2)]">
                 <img
                   src={profile}
                   alt="Kavya Pandian"
-                  className="w-full h-full rounded-full object-cover border-2 border-slate-900"
+                  className="w-full h-full rounded-full object-cover border border-slate-900/50"
                 />
               </div>
             </div>
@@ -113,20 +114,21 @@ function Hero() {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-5 mt-9">
+          <div className="flex flex-wrap items-center gap-4 mt-9">
             <a
               href="#projects"
-              className="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white font-bold hover:shadow-[0_0_35px_rgba(34,211,238,0.55)] hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white font-semibold text-base hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] hover:scale-105 transition-all duration-300"
             >
-              View Projects
+              <span>View My Work</span>
+              <FaExternalLinkAlt className="text-xs" />
             </a>
 
             <a
               href="#"
-              className="flex items-center gap-2.5 px-8 py-4 rounded-full bg-slate-200/80 dark:bg-white/5 border border-cyan-600/50 dark:border-cyan-400/40 text-cyan-800 dark:text-cyan-300 font-semibold hover:bg-cyan-400/10 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] hover:scale-105 transition-all duration-300 backdrop-blur-md"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-slate-900/90 dark:bg-slate-900/80 border border-slate-700 dark:border-white/20 text-white font-semibold text-base hover:bg-slate-800 dark:hover:bg-white/10 hover:border-slate-500 transition-all duration-300 backdrop-blur-md shadow-sm"
             >
-              <FaDownload className="text-cyan-600 dark:text-cyan-400" />
-              Resume
+              <span>Download CV</span>
+              <FaDownload className="text-xs" />
             </a>
           </div>
 
@@ -296,14 +298,14 @@ function Hero() {
           className="hidden lg:flex justify-center"
         >
           <div className="relative group">
-            {/* Multi-layered Glowing Rings */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 blur-2xl opacity-50 animate-pulse-glow group-hover:opacity-75 transition duration-500"></div>
+            {/* Multi-layered Soft Ambient Ring */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500/30 via-blue-600/30 to-indigo-600/30 blur-xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
 
-            <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-[380px] md:h-[380px] rounded-full p-1 bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 shadow-[0_0_50px_rgba(34,211,238,0.4)]">
+            <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-[380px] md:h-[380px] rounded-full p-[3px] bg-gradient-to-r from-cyan-500/80 via-blue-600/80 to-indigo-600/80 shadow-[0_0_30px_rgba(34,211,238,0.2)]">
               <img
                 src={profile}
                 alt="Kavya Pandian"
-                className="w-full h-full rounded-full object-cover border-2 border-slate-900 group-hover:scale-[1.02] transition duration-500"
+                className="w-full h-full rounded-full object-cover border border-slate-900/50 group-hover:scale-[1.01] transition duration-500"
               />
             </div>
           </div>
