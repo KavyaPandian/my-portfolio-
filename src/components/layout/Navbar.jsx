@@ -19,9 +19,9 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-400 via-blue-500 to-indigo-600 p-[2px] shadow-[0_0_15px_rgba(34,211,238,0.45)] group-hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-black text-lg text-cyan-400">
-              K
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 via-blue-500 to-indigo-600 p-[2px] shadow-[0_0_15px_rgba(34,211,238,0.45)] group-hover:scale-105 transition-transform duration-300">
+            <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-black text-sm tracking-wider text-cyan-400">
+              KP
             </div>
           </div>
           <span className="text-xl font-bold tracking-wide text-slate-900 dark:text-white">
