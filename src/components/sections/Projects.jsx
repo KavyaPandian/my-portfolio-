@@ -143,27 +143,27 @@ function Projects() {
               {/* Modal Close Button */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-5 right-5 p-2 rounded-full bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 transition cursor-pointer"
+                className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 dark:bg-white/5 text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-white/10 transition cursor-pointer"
               >
                 <FaTimes />
               </button>
 
               {/* Modal Header */}
               <div className="flex items-center gap-3">
-                <span className="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-400/40 text-xs font-semibold">
                   {selectedProject.category}
                 </span>
-                <span className="text-xs text-gray-400 flex items-center gap-1">
+                <span className="text-xs text-slate-500 dark:text-gray-400 flex items-center gap-1 font-medium">
                   <FaCodeBranch /> Featured Project
                 </span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-3">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">
                 {selectedProject.title}
               </h3>
 
               {/* Project Modal Banner */}
-              <div className="mt-5 rounded-2xl overflow-hidden border border-white/10 h-56 sm:h-64 bg-slate-900">
+              <div className="mt-5 rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 h-56 sm:h-64 bg-slate-900">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -171,19 +171,19 @@ function Projects() {
                 />
               </div>
 
-              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mt-5">
+              <p className="text-slate-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed mt-5 font-medium">
                 {selectedProject.description}
               </p>
 
               {/* Key Highlights */}
               <div className="mt-6">
-                <h4 className="text-lg font-bold text-cyan-400 mb-3">
+                <h4 className="text-lg font-bold text-cyan-600 dark:text-cyan-400 mb-3">
                   Key Highlights & Achievements
                 </h4>
-                <ul className="space-y-2.5 text-sm text-gray-300">
+                <ul className="space-y-2.5 text-sm sm:text-base text-slate-700 dark:text-gray-300 font-medium">
                   {selectedProject.highlights.map((highlight, index) => (
                     <li key={index} className="flex items-start gap-2.5">
-                      <FaCheckCircle className="text-cyan-400 text-base mt-0.5 shrink-0" />
+                      <FaCheckCircle className="text-cyan-600 dark:text-cyan-400 text-base mt-0.5 shrink-0" />
                       <span>{highlight}</span>
                     </li>
                   ))}
@@ -192,14 +192,14 @@ function Projects() {
 
               {/* Technologies */}
               <div className="mt-6">
-                <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2.5">
+                <h4 className="text-sm font-bold text-slate-600 dark:text-gray-400 uppercase tracking-wider mb-2.5">
                   Tech Stack & Tools
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {selectedProject.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-300 text-xs font-semibold"
+                      className="px-3 py-1 rounded-full bg-slate-100 dark:bg-cyan-500/10 border border-slate-300 dark:border-cyan-400/30 text-slate-800 dark:text-cyan-300 text-xs font-semibold"
                     >
                       {tech}
                     </span>
@@ -208,12 +208,12 @@ function Projects() {
               </div>
 
               {/* Modal Footer Links */}
-              <div className="flex items-center gap-4 mt-8 pt-5 border-t border-white/10">
+              <div className="flex items-center gap-4 mt-8 pt-5 border-t border-slate-200 dark:border-white/10">
                 <a
                   href={selectedProject.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-gray-950 font-bold hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition"
+                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white font-bold hover:shadow-lg transition"
                 >
                   <FaExternalLinkAlt className="text-xs" /> Live Demo
                 </a>
@@ -222,9 +222,9 @@ function Projects() {
                   href={selectedProject.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/5 border border-white/10 text-white font-semibold hover:border-cyan-400/50 hover:bg-white/10 transition"
+                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-slate-800 dark:text-gray-300 font-bold hover:text-cyan-600 dark:hover:text-cyan-400 transition"
                 >
-                  <FaGithub /> GitHub Repo
+                  <FaGithub className="text-sm" /> Code
                 </a>
               </div>
             </motion.div>
