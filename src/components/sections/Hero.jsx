@@ -77,10 +77,10 @@ function Hero() {
 
           {/* Animated Name */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-[1.1] tracking-tight">
-            <span className="text-slate-900 dark:text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.25)]">
+            <span className="text-slate-900 dark:text-white">
               Kavya
             </span>{" "}
-            <span className="animate-hero-gradient bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(34,211,238,0.45)]">
+            <span className="text-slate-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-cyan-400 dark:via-blue-500 dark:to-purple-500 font-extrabold">
               Pandian
             </span>
           </h1>
