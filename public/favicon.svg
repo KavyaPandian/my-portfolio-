@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091325" />
+      <stop offset="50%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- K Letter Primary Cyan-Blue Gradient -->
+    <linearGradient id="k-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Accent Secondary Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Box with Rounded Corners & Glow Border -->
+  <rect x="24" y="24" width="464" height="464" rx="128" fill="url(#bg-grad)" stroke="url(#k-grad)" stroke-width="8" />
+
+  <!-- Background Decorative Ambient Glow -->
+  <circle cx="360" cy="160" r="140" fill="#22d3ee" opacity="0.12" filter="blur(40px)" />
+  <circle cx="160" cy="360" r="140" fill="#6366f1" opacity="0.12" filter="blur(40px)" />
+
+  <!-- Stylized Letter "K" -->
+  <g filter="url(#glow)">
+    <!-- Vertical Bar of K -->
+    <rect x="130" y="110" width="56" height="292" rx="28" fill="url(#k-grad)" />
+
+    <!-- Upper Arm of K -->
+    <path d="M 160 270 L 320 125 C 335 110, 360 120, 360 142 L 360 160 C 360 172, 352 184, 340 195 L 235 290 Z" fill="url(#accent-grad)" />
+
+    <!-- Lower Arm of K -->
+    <path d="M 215 250 L 335 365 C 348 378, 360 385, 360 400 L 360 402 C 360 420, 335 430, 320 415 L 175 285 Z" fill="url(#k-grad)" />
+
+    <!-- Dot Accent for Tech Monogram feel -->
+    <circle cx="360" cy="125" r="16" fill="#22d3ee" />
+  </g>
+</svg>
