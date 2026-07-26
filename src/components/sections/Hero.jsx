@@ -34,12 +34,13 @@ function Hero() {
       {/* Dynamic Animated Ambient Background */}
       <Background />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="w-full"
         >
           {/* Status Badge */}
           <motion.div
@@ -58,6 +59,20 @@ function Hero() {
           <p className="text-cyan-600 dark:text-cyan-400 text-lg font-medium tracking-wide mb-2">
             Hello, I'm
           </p>
+
+          {/* Mobile Profile Avatar (In Middle on Mobile) */}
+          <div className="lg:hidden my-6 flex justify-center">
+            <div className="relative group">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 blur-2xl opacity-50 animate-pulse-glow"></div>
+              <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-72 sm:h-72 rounded-full p-1 bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 shadow-[0_0_40px_rgba(34,211,238,0.4)]">
+                <img
+                  src={profile}
+                  alt="Kavya Pandian"
+                  className="w-full h-full rounded-full object-cover border-2 border-slate-900"
+                />
+              </div>
+            </div>
+          </div>
 
           {/* Animated Name */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-[1.1] tracking-tight">
@@ -278,13 +293,13 @@ function Hero() {
               ease: "easeInOut",
             },
           }}
-          className="flex justify-center"
+          className="hidden lg:flex justify-center"
         >
           <div className="relative group">
             {/* Multi-layered Glowing Rings */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 blur-2xl opacity-50 animate-pulse-glow group-hover:opacity-75 transition duration-500"></div>
 
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[400px] md:h-[400px] rounded-full p-1 bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 shadow-[0_0_50px_rgba(34,211,238,0.4)]">
+            <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-[380px] md:h-[380px] rounded-full p-1 bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 shadow-[0_0_50px_rgba(34,211,238,0.4)]">
               <img
                 src={profile}
                 alt="Kavya Pandian"

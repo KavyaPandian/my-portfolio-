@@ -138,7 +138,7 @@ function Projects() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ duration: 0.25 }}
-              className="bg-slate-950 border border-cyan-400/50 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_50px_rgba(34,211,238,0.3)] relative p-6 sm:p-8"
+              className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-cyan-400/50 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-xl dark:shadow-[0_0_50px_rgba(34,211,238,0.3)] relative p-5 sm:p-8"
             >
               {/* Modal Close Button */}
               <button

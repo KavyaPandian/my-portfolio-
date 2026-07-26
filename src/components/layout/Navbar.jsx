@@ -54,32 +54,33 @@ function Navbar() {
         </div>
 
         {/* Mobile Buttons */}
-        <div className="flex md:hidden items-center gap-4">
+        <div className="flex md:hidden items-center gap-3">
           <button
             onClick={toggleTheme}
             title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
-            className="p-2 rounded-full bg-slate-800/80 dark:bg-white/5 border border-slate-700 dark:border-white/10 text-amber-400 dark:text-cyan-300 transition cursor-pointer"
+            className="p-2 rounded-full bg-slate-200/80 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-amber-500 dark:text-cyan-300 transition cursor-pointer"
           >
-            {isDark ? <FaSun className="text-base" /> : <FaMoon className="text-base text-indigo-400" />}
+            {isDark ? <FaSun className="text-base" /> : <FaMoon className="text-base text-indigo-500" />}
           </button>
 
           <button
-            className="text-2xl text-gray-300"
+            className="p-2 text-2xl text-slate-800 dark:text-gray-200 rounded-lg hover:bg-slate-100 dark:hover:bg-white/5 transition cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
           >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Drawer Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#0a0f1d] border-b border-gray-800 px-6 py-5 space-y-2">
+        <div className="md:hidden bg-white/95 dark:bg-[#030712]/95 backdrop-blur-2xl border-b border-slate-200 dark:border-white/10 px-6 py-5 space-y-2 shadow-lg dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.link}
-              className="block py-2.5 text-gray-300 hover:text-cyan-400 transition font-medium text-sm"
+              className="block py-2.5 px-4 rounded-xl text-slate-800 dark:text-gray-200 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-white/5 transition font-semibold text-base"
               onClick={() => setIsOpen(false)}
             >
               {item.name}

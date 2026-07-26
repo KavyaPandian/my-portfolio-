@@ -81,8 +81,8 @@ function About() {
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: .7 }}
-            className="grid md:grid-cols-2 gap-6"
+            transition={{ duration: 0.7 }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"
           >
 
             {highlights.map((item) => (
