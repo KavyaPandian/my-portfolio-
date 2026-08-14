@@ -18,7 +18,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-slate-100 dark:bg-[#02050e] text-slate-900 dark:text-white border-t border-slate-300 dark:border-white/10 py-12 px-6 relative transition-colors duration-300">
+    <footer className="bg-slate-100 dark:bg-black text-slate-900 dark:text-white border-t border-slate-300 dark:border-white/10 py-12 px-6 relative transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand */}
         <div className="flex items-center gap-3">

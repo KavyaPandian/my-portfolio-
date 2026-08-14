@@ -57,7 +57,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-slate-50 dark:bg-[#030712] text-slate-900 dark:text-white py-24 px-6 relative overflow-hidden transition-colors duration-300"
+      className="bg-slate-50 dark:bg-black text-slate-900 dark:text-white py-24 px-6 relative overflow-hidden transition-colors duration-300"
     >
       {/* Background Glow */}
       <div className="absolute top-1/2 left-10 w-96 h-96 bg-cyan-500/10 blur-[160px] rounded-full pointer-events-none" />
@@ -87,7 +87,7 @@ function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="p-5 sm:p-8 rounded-3xl bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 hover:border-cyan-500 dark:hover:border-cyan-400/40 shadow-md dark:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300"
+            className="p-5 sm:p-8 rounded-3xl bg-white dark:bg-zinc-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 hover:border-cyan-500 dark:hover:border-cyan-400/40 shadow-md dark:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300"
           >
             <p className="text-slate-700 dark:text-gray-300 text-sm sm:text-base mb-6 font-medium">
               Feel free to reach out via email or phone.
@@ -210,7 +210,7 @@ function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="p-5 sm:p-8 rounded-3xl bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 hover:border-cyan-500 dark:hover:border-cyan-400/40 shadow-md dark:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300"
+            className="p-5 sm:p-8 rounded-3xl bg-white dark:bg-zinc-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 hover:border-cyan-500 dark:hover:border-cyan-400/40 shadow-md dark:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300"
           >
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
               Send Me a Message

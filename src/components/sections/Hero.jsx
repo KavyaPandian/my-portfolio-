@@ -30,7 +30,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-slate-50 dark:bg-[#030712] text-slate-900 dark:text-white overflow-hidden pt-28 pb-16 flex items-center transition-colors duration-300"
+      className="relative min-h-screen bg-slate-50 dark:bg-black text-slate-900 dark:text-white overflow-hidden pt-28 pb-16 flex items-center transition-colors duration-300"
     >
       {/* Dynamic Animated Ambient Background */}
       <Background />
@@ -63,15 +63,12 @@ function Hero() {
 
           {/* Mobile Profile Avatar (In Middle on Mobile) */}
           <div className="lg:hidden my-6 flex justify-center">
-            <div className="relative group">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500/30 via-blue-600/30 to-indigo-600/30 blur-xl opacity-40"></div>
-              <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-72 sm:h-72 rounded-full p-[3px] bg-gradient-to-r from-cyan-500/80 via-blue-600/80 to-indigo-600/80 shadow-[0_0_25px_rgba(34,211,238,0.2)]">
-                <img
-                  src={profile}
-                  alt="Kavya Pandian"
-                  className="w-full h-full rounded-full object-cover border border-slate-900/50"
-                />
-              </div>
+            <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-72 sm:h-72 rounded-full p-1 bg-slate-200 dark:bg-white/10 border border-slate-300 dark:border-white/20 shadow-xl overflow-hidden">
+              <img
+                src={profile}
+                alt="Kavya Pandian"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </div>
 
@@ -125,7 +122,7 @@ function Hero() {
 
             <a
               href="#"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-slate-900/90 dark:bg-slate-900/80 border border-slate-700 dark:border-white/20 text-white font-semibold text-base hover:bg-slate-800 dark:hover:bg-white/10 hover:border-slate-500 transition-all duration-300 backdrop-blur-md shadow-sm"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-black/90 dark:bg-zinc-900/80 border border-slate-700 dark:border-white/20 text-white font-semibold text-base hover:bg-slate-800 dark:hover:bg-white/10 hover:border-slate-500 transition-all duration-300 backdrop-blur-md shadow-sm"
             >
               <span>Download CV</span>
               <FaDownload className="text-xs" />
@@ -211,7 +208,7 @@ function Hero() {
               {personal.specializations.map((spec) => (
                 <span
                   key={spec}
-                  className="px-4 py-2 rounded-full bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-700/80 text-slate-900 dark:text-cyan-300 text-xs sm:text-sm font-semibold backdrop-blur-md hover:border-cyan-500 transition duration-300 shadow-sm dark:shadow-none"
+                  className="px-4 py-2 rounded-full bg-slate-200 dark:bg-zinc-900/80 border border-slate-300 dark:border-slate-700/80 text-slate-900 dark:text-cyan-300 text-xs sm:text-sm font-semibold backdrop-blur-md hover:border-cyan-500 transition duration-300 shadow-sm dark:shadow-none"
                 >
                   {spec}
                 </span>
@@ -239,7 +236,7 @@ function Hero() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                     transition={{ duration: 0.2 }}
-                    className="mt-3 p-5 rounded-2xl bg-white dark:bg-slate-950/95 border border-slate-300 dark:border-cyan-400/40 backdrop-blur-xl shadow-xl dark:shadow-[0_10px_35px_rgba(0,0,0,0.6)] max-w-md relative z-30"
+                    className="mt-3 p-5 rounded-2xl bg-white dark:bg-black/95 border border-slate-300 dark:border-cyan-400/40 backdrop-blur-xl shadow-xl dark:shadow-[0_10px_35px_rgba(0,0,0,0.6)] max-w-md relative z-30"
                   >
                     <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-white/10">
                       <div className="flex items-center gap-2 text-cyan-700 dark:text-cyan-400 font-bold text-sm sm:text-base">
@@ -281,33 +278,16 @@ function Hero() {
         {/* Right Avatar Card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{
-            opacity: 1,
-            scale: 1,
-            y: [0, -14, 0],
-          }}
-          transition={{
-            opacity: { duration: 0.8 },
-            scale: { duration: 0.8 },
-            y: {
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut",
-            },
-          }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
           className="hidden lg:flex justify-center"
         >
-          <div className="relative group">
-            {/* Multi-layered Soft Ambient Ring */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500/30 via-blue-600/30 to-indigo-600/30 blur-xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
-
-            <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-[380px] md:h-[380px] rounded-full p-[3px] bg-gradient-to-r from-cyan-500/80 via-blue-600/80 to-indigo-600/80 shadow-[0_0_30px_rgba(34,211,238,0.2)]">
-              <img
-                src={profile}
-                alt="Kavya Pandian"
-                className="w-full h-full rounded-full object-cover border border-slate-900/50 group-hover:scale-[1.01] transition duration-500"
-              />
-            </div>
+          <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-[380px] md:h-[380px] rounded-full p-1 bg-slate-200 dark:bg-white/10 border border-slate-300 dark:border-white/20 shadow-2xl overflow-hidden">
+            <img
+              src={profile}
+              alt="Kavya Pandian"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
         </motion.div>
       </div>

@@ -12,7 +12,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="bg-slate-50 dark:bg-[#030712] text-slate-900 dark:text-white py-24 px-6 relative transition-colors duration-300 overflow-hidden"
+      className="bg-slate-50 dark:bg-black text-slate-900 dark:text-white py-24 px-6 relative transition-colors duration-300 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
@@ -50,7 +50,7 @@ function Experience() {
               </div>
 
               {/* Experience Card */}
-              <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 hover:border-cyan-500 dark:hover:border-cyan-400/40 shadow-md dark:shadow-[0_10px_35px_rgba(0,0,0,0.4)] transition-all duration-300">
+              <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-zinc-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 hover:border-cyan-500 dark:hover:border-cyan-400/40 shadow-md dark:shadow-[0_10px_35px_rgba(0,0,0,0.4)] transition-all duration-300">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-200 dark:border-white/10">
                   <div>
                     <div className="flex items-center gap-2 text-cyan-600 dark:text-cyan-400 font-bold text-xs sm:text-sm uppercase tracking-wider mb-1">

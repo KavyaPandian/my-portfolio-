@@ -16,7 +16,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-slate-50 dark:bg-[#030712] text-slate-900 dark:text-white py-24 px-6 relative overflow-hidden transition-colors duration-300"
+      className="bg-slate-50 dark:bg-black text-slate-900 dark:text-white py-24 px-6 relative overflow-hidden transition-colors duration-300"
     >
       {/* Background Glow */}
       <div className="absolute top-1/3 right-10 w-96 h-96 bg-cyan-500/10 blur-[160px] rounded-full pointer-events-none" />
@@ -51,16 +51,16 @@ function Projects() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
-                className="group bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 rounded-3xl overflow-hidden hover:border-cyan-500 dark:hover:border-cyan-400/60 hover:shadow-lg dark:hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition-all duration-300 flex flex-col shadow-sm dark:shadow-none"
+                className="group bg-white dark:bg-zinc-900/60 backdrop-blur-xl border border-slate-200 dark:border-white/10 rounded-3xl overflow-hidden hover:border-cyan-500 dark:hover:border-cyan-400/60 hover:shadow-lg dark:hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition-all duration-300 flex flex-col shadow-sm dark:shadow-none"
               >
                 {/* Image Container */}
-                <div className="relative h-52 overflow-hidden bg-slate-950">
+                <div className="relative h-52 overflow-hidden bg-black">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
 
                   {/* Category Pill */}
                   <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 text-xs font-semibold backdrop-blur-md">
@@ -138,7 +138,7 @@ function Projects() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ duration: 0.25 }}
-              className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-cyan-400/50 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-xl dark:shadow-[0_0_50px_rgba(34,211,238,0.3)] relative p-5 sm:p-8"
+              className="bg-white dark:bg-black border border-slate-300 dark:border-cyan-400/50 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-xl dark:shadow-[0_0_50px_rgba(34,211,238,0.3)] relative p-5 sm:p-8"
             >
               {/* Modal Close Button */}
               <button
@@ -163,7 +163,7 @@ function Projects() {
               </h3>
 
               {/* Project Modal Banner */}
-              <div className="mt-5 rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 h-56 sm:h-64 bg-slate-900">
+              <div className="mt-5 rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 h-56 sm:h-64 bg-black">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}

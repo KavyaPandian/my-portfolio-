@@ -33,7 +33,7 @@ function About() {
   return (
     <section
       id="about"
-      className="bg-slate-50 dark:bg-[#030712] text-slate-900 dark:text-white py-24 px-6 transition-colors duration-300"
+      className="bg-slate-50 dark:bg-black text-slate-900 dark:text-white py-24 px-6 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
 
