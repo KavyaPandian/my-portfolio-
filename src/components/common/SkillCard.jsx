@@ -6,30 +6,27 @@ function SkillCard({ skill }) {
   return (
     <motion.div
       layout
-      initial={{ opacity: 0, scale: 0.9 }}
+      initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.9 }}
-      whileHover={{
-        y: -8,
-        scale: 1.03,
-      }}
-      transition={{ duration: 0.25 }}
-      className="group bg-white dark:bg-white/5 backdrop-blur-xl border border-slate-200 dark:border-white/10 rounded-3xl py-5 px-5 text-center hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-md dark:hover:shadow-[0_0_20px_rgba(34,211,238,0.25)] transition-all duration-300 shadow-sm dark:shadow-none"
+      exit={{ opacity: 0, scale: 0.95 }}
+      whileHover={{ y: -4 }}
+      transition={{ duration: 0.2 }}
+      className="group bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-2xl py-5 px-5 text-center hover:border-slate-300 dark:hover:border-zinc-700 transition-colors duration-200 shadow-sm"
     >
       <Icon
-        size={34}
-        className={`${skill.color} mx-auto mb-3 transition-all duration-300 group-hover:scale-125 group-hover:-translate-y-1`}
+        size={32}
+        className={`${skill.color} mx-auto mb-3 transition-transform duration-200 group-hover:scale-110`}
       />
 
-      <h3 className="text-[20px] font-bold text-slate-900 dark:text-white mt-1">
+      <h3 className="text-lg font-bold text-slate-900 dark:text-white mt-1">
         {skill.name}
       </h3>
 
-      <p className="text-slate-500 dark:text-gray-400 text-sm mt-1">
+      <p className="text-slate-500 dark:text-zinc-400 text-xs mt-1">
         {skill.category}
       </p>
     </motion.div>
   );
 }
 
-export default SkillCard;
+export default SkillCard;

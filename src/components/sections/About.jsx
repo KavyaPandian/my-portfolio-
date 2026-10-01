@@ -33,14 +33,14 @@ function About() {
   return (
     <section
       id="about"
-      className="bg-slate-50 dark:bg-black text-slate-900 dark:text-white py-24 px-6 transition-colors duration-300"
+      className="bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-white py-24 px-6 transition-colors duration-200"
     >
       <div className="max-w-7xl mx-auto">
 
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .6 }}
+          transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center text-slate-900 dark:text-white"
         >
           About <span className="text-cyan-600 dark:text-cyan-400">Me</span>
@@ -53,25 +53,23 @@ function About() {
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: .7 }}
+            transition={{ duration: 0.7 }}
           >
 
             <h3 className="text-3xl font-semibold mb-6 text-slate-900 dark:text-white">
               Passionate Full Stack Developer
             </h3>
 
-            <p className="text-slate-700 dark:text-gray-400 leading-8 mb-6">
+            <p className="text-slate-600 dark:text-zinc-400 leading-8 mb-6">
               I'm a B.Tech Computer Science & Engineering graduate from SRM
               Institute of Science and Technology (8.74 CGPA), passionate about
               building modern web applications using React, Node.js, Express,
               MongoDB, and Python.
             </p>
 
-            <p className="text-slate-700 dark:text-gray-400 leading-8">
-
+            <p className="text-slate-600 dark:text-zinc-400 leading-8">
               I enjoy learning new technologies, solving real-world
               problems and continuously improving my development skills.
-
             </p>
 
           </motion.div>
@@ -89,7 +87,7 @@ function About() {
 
               <div
                 key={item.title}
-                className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl p-6 hover:border-cyan-500 dark:hover:border-cyan-400 transition duration-300 hover:-translate-y-2 shadow-md dark:shadow-none"
+                className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-2xl p-6 hover:border-slate-300 dark:hover:border-zinc-700 transition duration-200 hover:-translate-y-1 shadow-sm"
               >
 
                 <div className="text-cyan-600 dark:text-cyan-400 text-3xl mb-4">
@@ -100,7 +98,7 @@ function About() {
                   {item.title}
                 </h4>
 
-                <p className="text-slate-600 dark:text-gray-400 text-sm">
+                <p className="text-slate-600 dark:text-zinc-400 text-sm leading-relaxed">
                   {item.desc}
                 </p>
 

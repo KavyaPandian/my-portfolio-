@@ -12,7 +12,7 @@ import Footer from "./components/layout/Footer";
 function App() {
   return (
     <ThemeProvider>
-      <div className="bg-slate-50 dark:bg-black text-slate-900 dark:text-white min-h-screen transition-colors duration-300">
+      <div className="bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 min-h-screen transition-colors duration-200">
         <Toaster position="top-right" />
         <Navbar />
         <Hero />
