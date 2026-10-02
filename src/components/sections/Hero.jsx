@@ -23,7 +23,7 @@ import {
 import profile from "../../assets/images/kavya.jpeg";
 import socials from "../../data/socials";
 import personal from "../../data/personal";
-import resume from "../../assets/resume/kavya finalllll software resumeeee.pdf";
+import resume from "../../assets/resume/kavya_resume.pdf";
 
 function Hero() {
   const [showEducationModal, setShowEducationModal] = useState(false);
@@ -105,7 +105,7 @@ function Hero() {
             </a>
 
             <a
-              href={resume}
+              href={`${resume}?t=${Date.now()}`}
               download="Kavya_Pandian_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
