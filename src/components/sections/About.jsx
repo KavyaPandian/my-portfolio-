@@ -57,19 +57,17 @@ function About() {
           >
 
             <h3 className="text-3xl font-semibold mb-6 text-slate-900 dark:text-white">
-              Passionate Full Stack Developer
+              Frontend-Focused Full Stack Developer
             </h3>
 
             <p className="text-slate-600 dark:text-zinc-400 leading-8 mb-6">
-              I'm a B.Tech Computer Science & Engineering graduate from SRM
-              Institute of Science and Technology (8.74 CGPA), passionate about
-              building modern web applications using React, Node.js, Express,
-              MongoDB, and Python.
+              I'm a Computer Science and Engineering graduate from SRM Institute of Science and Technology with a CGPA of 8.73. I specialize in building responsive, user-friendly web applications with a strong focus on frontend development, UI design, and modern web technologies.<b> </b>
+
+              I enjoy transforming ideas into functional digital experiences using React.js, Next.js, JavaScript, and modern UI technologies, while developing scalable backend solutions with Python, Django, Node.js, and databases.
             </p>
 
             <p className="text-slate-600 dark:text-zinc-400 leading-8">
-              I enjoy learning new technologies, solving real-world
-              problems and continuously improving my development skills.
+              I'm passionate about learning new technologies, solving real-world problems, and continuously improving my development and design skills.
             </p>
 
           </motion.div>

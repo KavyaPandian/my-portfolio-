@@ -6,7 +6,7 @@ const internships = [
     location: "Offsite",
     period: "Apr 2026 – Present",
     type: "Certificate",
-    technologies: ["Figma", "React.js", "Next.js", "Python", "Django REST Framework"],
+    technologies: ["Figma","Adobe Illustrator", "React.js", "Next.js", "Python", "Django REST Framework"],
     highlights: [
       "Designed 10+ responsive UI screens using Figma, applying UX principles to improve usability and visual consistency.",
       "Implemented 5+ web features using React.js, Next.js, Python, and Django REST Framework.",
