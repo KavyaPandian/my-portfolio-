@@ -61,7 +61,7 @@ function About() {
             </h3>
 
             <p className="text-slate-600 dark:text-zinc-400 leading-8 mb-6">
-              I'm a Computer Science and Engineering graduate from SRM Institute of Science and Technology with a CGPA of 8.73. I specialize in building responsive, user-friendly web applications with a strong focus on frontend development, UI design, and modern web technologies.<b> </b>
+              I'm a Computer Science and Engineering graduate from SRM Institute of Science and Technology with a CGPA of 8.74. I specialize in building responsive, user-friendly web applications with a strong focus on frontend development, UI design, and modern web technologies.<b> </b>
 
               I enjoy transforming ideas into functional digital experiences using React.js, Next.js, JavaScript, and modern UI technologies, while developing scalable backend solutions with Python, Django, Node.js, and databases.
             </p>
