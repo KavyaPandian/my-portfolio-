@@ -3,7 +3,6 @@ import {
   FaBriefcase,
   FaCalendarAlt,
   FaMapMarkerAlt,
-  FaAward,
   FaCheckCircle,
 } from "react-icons/fa";
 import internships from "../../data/experience";
@@ -53,9 +52,6 @@ function Experience() {
               <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 shadow-sm transition-colors duration-200">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-200 dark:border-zinc-800">
                   <div>
-                    <div className="flex items-center gap-2 text-cyan-600 dark:text-cyan-400 font-bold text-xs sm:text-sm uppercase tracking-wider mb-1">
-                      <FaAward className="text-amber-500" /> {item.type}
-                    </div>
                     <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
                       {item.role}
                     </h3>
